@@ -39,3 +39,10 @@ public:
 		queue_array[REAR] = num;
 
 	}
+
+	void remove() {
+		//cek apakah antrian panjang
+		if (FRONT == -1) {
+			cout << "Queue underflow\n";
+			return;
+		}
